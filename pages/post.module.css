@@ -78,6 +78,11 @@
   border-radius: 2px;
 }
 
+.img {
+  width: 200px;
+  height: 200px;
+}
+
 .italic {
   font-style: italic;
 }

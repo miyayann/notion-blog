@@ -117,7 +117,7 @@ const renderBlock = (block) => {
       const caption = value.caption ? value.caption[0]?.plain_text : "";
       return (
         <figure>
-          <img src={src} alt={caption} />
+          <img src={src} alt={caption} style={{width: "200px"}} />
           {caption && <figcaption>{caption}</figcaption>}
         </figure>
       );
@@ -171,13 +171,13 @@ export default function Post({ page, blocks }) {
   return (
     <div>
       <Head>
-        <title>{page.properties.Name.title[0].plain_text}</title>
+        <title>{page.properties.名前.title[0].plain_text}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <article className={styles.container}>
         <h1 className={styles.name}>
-          <Text text={page.properties.Name.title} />
+          <Text text={page.properties.名前.title} />
         </h1>
         <section>
           {blocks.map((block) => (
